@@ -24,15 +24,15 @@ Display Git branch name and status—prompt repaints asynchronously! ✨
 
 <pre>
 ~/p/<b>hydro</b> main ❱ touch Solution
-~/p/<b>hydro</b> main• ❱ ⎢
+~/p/<b>hydro</b> main •1 ❱ ⎢
 </pre>
 
-> `•` indicates that there are staged, unstaged or untracked files.
+> `•N` indicates that there are `N` staged, unstaged or untracked files.
 
 Display how many commits ahead and/or behind you are of your upstream—prompt repaints asynchronously!
 
 <pre>
-~/p/<b>hydro</b> main• ↓2 ❱ git commit -am Hotfix
+~/p/<b>hydro</b> main •1 ↓2 ❱ git commit -am Hotfix
 ~/p/<b>hydro</b> main ↑1 ↓2 ❱ git pull --rebase && git push
 ~/p/<b>hydro</b> main ❱ ⎢
 </pre>
@@ -92,7 +92,7 @@ Modify variables using `set --universal` from the command line or `set --global`
 | ------------------------- | ------ | ------------------------------- | ------- |
 | `hydro_symbol_start`      | string | Prompt start symbol.            |         |
 | `hydro_symbol_prompt`     | string | Prompt symbol.                  | `❱`     |
-| `hydro_symbol_git_dirty`  | string | Dirty repository symbol.        | `•`     |
+| `hydro_symbol_git_dirty`  | string | Dirty repository symbol prefix. | `•`     |
 | `hydro_symbol_git_ahead`  | string | Ahead of your upstream symbol.  | `↑`     |
 | `hydro_symbol_git_behind` | string | Behind of your upstream symbol. | `↓`     |
 
